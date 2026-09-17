@@ -72,6 +72,21 @@ Whether you are building a smart parking system to count vehicle entry and exit,
    - Once processing is stopped, scroll to the bottom of the page to view a preview of the crossing logs.
    - Click **Download log as CSV** to save the data for external analysis.
 
+## Output & Demonstration
+
+When the application is running successfully, you can expect the following output and capabilities:
+
+![Live Tracking Demonstration](Screenshot/Screenshot%202026-09-17%20215859%20-%20Copy.png)
+
+- **Live Annotations**: The video feed will display real-time bounding boxes around detected objects (e.g., cars, people) with their assigned tracking IDs and confidence scores.
+- **Dynamic Tracking Lines**: A visible horizontal or vertical line will be overlaid on the video. As an object's center point crosses this line, the corresponding counter increments.
+- **Directional Counting**: The app distinctly counts objects based on their direction of travel relative to the line. 
+  - *Note: If all objects (e.g., cars on a divided highway) are moving in the same direction, only one counter (either "In" or "Out") will increment.*
+
+![Data Logging Demonstration](Screenshot/Screenshot%202026-09-17%20215920%20-%20Copy.png)
+
+- **Data Logging**: Every crossing event is recorded in a data table at the bottom of the app, detailing the exact timestamp and the direction of the crossing. This table can be instantly exported to CSV for further analysis.
+
 ## Project Structure
 
 ```text
